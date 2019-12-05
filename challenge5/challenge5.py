@@ -25,7 +25,6 @@ class Challenge5(unittest.TestCase):
     def find_matches(self, driver, car):
         drop = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "serverSideDataTable_length")))
         car_model = driver.find_elements_by_xpath("//*[@data-uname = 'lotsearchLotmodel']")
-        #car_make = driver.find_element_by_xpath("//*[@data-uname = 'lotsearchLotmake']")
         unique_models = []
         for option in Select(drop).options:
             if option.text == "20":
