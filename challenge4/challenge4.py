@@ -12,8 +12,7 @@ class Challenge4(unittest.TestCase):
         self.driver.close()
 
     def test_challenge4(self):
-        x =
-        print(num2word(fibR()))
+        print(num2word(fibR(12)))
 
 
 if __name__ == "__main__":
