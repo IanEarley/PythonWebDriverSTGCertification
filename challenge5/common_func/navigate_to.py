@@ -1,3 +1,3 @@
-def navigate_to(self, driver, site):
+def navigate_to(driver, site):
     print("Navigating to site...")
     driver.get(site)

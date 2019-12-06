@@ -15,7 +15,7 @@ class Challenge6 (unittest.TestCase):
         driver = self.driver
         navigate_to(driver, "https://www.copart.com/")
         search_for(driver, "Nissan")
-        model_present(driver, "skyliner")
+        model_present(driver, "skyline")
 
 
 if __name__ == "__main__":
