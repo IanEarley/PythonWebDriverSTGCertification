@@ -19,7 +19,8 @@ class Challenge2 (unittest.TestCase) :
         elem.send_keys("exotics")
         elem.send_keys(Keys.RETURN)
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "serverSideDataTable")))
-        assert driver.page_source.find("PORSCHE"), "Porsche not present in list"
+        assert driver.page_source.find("PORSCHE") != -1, "Porsche not present in list"
+        print("Found Porsche on page")
 
 
 if __name__ == '__main__' :
