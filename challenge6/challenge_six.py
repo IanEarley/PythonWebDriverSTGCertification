@@ -14,7 +14,7 @@ class Challenge6 (unittest.TestCase):
     def test_challenge6(self):
         driver = self.driver
         navigate_to(driver, "https://www.copart.com/")
-        search_for(driver, "Nissan")
+        search_for(driver, "Nissan", "//*[@id='search-form']//input")
         model_present(driver, "skyline")
 
 
